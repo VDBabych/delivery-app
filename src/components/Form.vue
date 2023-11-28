@@ -5,6 +5,7 @@
     autocomplete="off"
   >
     <label>
+      <span>Місто відправлення</span>
       <input
         name="sendSity"
         v-model="sendSity"
@@ -14,6 +15,7 @@
     /></label>
     <GeoButton @geo-error="onGeoError" @coords-came="onCoordsCame" />
     <label>
+      <span>Місто прибуття</span>
       <input
         name="getCity"
         v-model="getCity"
@@ -23,6 +25,7 @@
       />
     </label>
     <label>
+      <span>Тип посилки</span>
       <select
         name="parcelType"
         v-model="parcelType"
@@ -49,6 +52,7 @@
     </label>
 
     <label>
+      <span>Дата відправлення</span>
       <input
         name="dispatchDate"
         required
@@ -59,6 +63,7 @@
       />
     </label>
     <label>
+      <span>Опис</span>
       <textarea
         name="parcelDesc"
         class="w-full border border-black rounded p-2 resize-none h-[200px]"

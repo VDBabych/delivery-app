@@ -9,7 +9,7 @@ const getCityByCoords = async (coords) => {
   const { data } = await axiosInstance.get("geocode/json?", {
     params: {
       latlng: `${coords.latitude},${coords.longitude}`,
-      key: "HiiYb9uEVcsrI0yzuZIA56udNmX1STXI3uKrgO9ihzNDyaPYBFJRoODLjP2NUlY9",
+      key: import.meta.env.VITE_PUBLIC_KEY,
       language: "uk",
     },
   });
